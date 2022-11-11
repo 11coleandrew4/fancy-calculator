@@ -182,3 +182,49 @@ button:hover {
     background-image: url(../public/airplane-banner-good.png);
   }
 }
+
+/* MOBILE */
+
+@media (max-width: 580px) {
+  @keyframes fly-in {
+    from {
+      transform: translateX(-128vw);
+    }
+    to {
+      transform: translateX(160vw);
+    }
+  }
+
+  #banner-text {
+    margin-left: 9%;
+    margin-top: 3.5%;
+    height: 30px;
+    width: 200px;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: left;
+  }
+  #banner-text span {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0%;
+  }
+
+  .plane {
+    transform: translateX(-188vw);
+    margin-bottom: 30px;
+    z-index: 100;
+    width: 450px;
+    height: 65px;
+    background-image: url(../public/airplane-banner-good.png);
+  }
+
+  .plane-active {
+    animation: fly-in 16000ms;
+    margin-bottom: 30px;
+    z-index: 100;
+    width: 450px;
+    height: 65px;
+    background-image: url(../public/airplane-banner-good.png);
+  }
+}
